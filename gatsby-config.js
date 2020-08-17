@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/website",
   /* Your site config here */
   plugins: [],
 }
