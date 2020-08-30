@@ -6,6 +6,16 @@
 
 module.exports = {
   pathPrefix: "/website",
-  /* Your site config here */
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    // ----
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`open sans:300,400`],
+        display: "swap",
+      },
+    },
+  ],
 }

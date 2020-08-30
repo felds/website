@@ -1,0 +1,71 @@
+// aliases
+$red: #cf226a;
+$black: #555;
+
+// colors
+$accent: $red;
+$text-color: $black;
+
+// go!
+html {
+  box-sizing: border-box;
+  font: 16px/1.414 "open sans", sans-serif;
+  color: $text-color;
+}
+* {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover,
+  &:visited {
+    color: $accent;
+  }
+}
+
+.identity-card {
+  width: 100%;
+  max-width: 32rem;
+  padding: 2rem;
+  display: flex;
+}
+.identity-card__avatar {
+  width: 6rem;
+  margin-right: 2rem;
+}
+.identity-card__text {
+  width: 100%;
+  > * {
+    margin: 0 0 1rem;
+  }
+}
+.identity-card__name {
+  font-size: 26px;
+  font-weight: lighter;
+}
+.identity-card__description {
+}
+.identity-card__links {
+}
+
+.avatar {
+  display: block;
+  clip-path: circle();
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
