@@ -55,15 +55,16 @@ a {
   font-size: 26px;
   font-weight: lighter;
 }
-.identity-card__description {
-}
-.identity-card__links {
-}
+// .identity-card__description {
+// }
+// .identity-card__links {
+// }
 
 .avatar {
   display: block;
   clip-path: circle();
   img {
+    border-radius: 50%;
     display: block;
     width: 100%;
     height: auto;

@@ -5,7 +5,11 @@
  */
 
 module.exports = {
-  pathPrefix: "/website",
+  siteMetadata: {
+    title: "Felds — Full stack web dev",
+    description: `Full stack web dev based in São Paulo, Brazil.`,
+  },
+  pathPrefix: "/",
   plugins: [
     // ----
     "gatsby-plugin-sass",
