@@ -7,5 +7,5 @@
 module.exports = {
   pathPrefix: "/website",
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-sass"],
 }
